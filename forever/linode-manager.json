@@ -1,0 +1,13 @@
+{
+    "uid": "linode-manager",
+    "append": true,
+    "watch": false,
+    "script": "app.js",
+    "args": ["--prod"],
+    "sourceDir": "/home/node/linode-manager/front-end",
+    "logFile": "/home/node/logs/forever.log",
+    "outFile": "/home/node/logs/out.log",
+    "errFile": "/home/node/logs/err.log",
+    "minUptime": 1000,
+    "spinSleepTime": 1000
+}

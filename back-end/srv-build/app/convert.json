@@ -1,0 +1,395 @@
+{
+  "linode": {
+    "state": {
+      "ALERT_BWIN_ENABLED": {
+        "name": "alert_bwin_enabled",
+        "type": "bool",
+        "hint": "Enable the incoming bandwidth email alert"
+      },
+      "ALERT_BWIN_THRESHOLD": {
+        "name": "alert_bwin_threshold",
+        "type": "number",
+        "hint": "Mb/sec"
+      },
+      "ALERT_BWOUT_ENABLED": {
+        "name": "alert_bwout_enabled",
+        "type": "bool",
+        "hint": "Enable the outgoing bandwidth email alert"
+      },
+      "ALERT_BWOUT_THRESHOLD": {
+        "name": "alert_bwout_threshold",
+        "type": "number",
+        "hint": "Mb/sec"
+      },
+      "ALERT_BWQUOTA_ENABLED": {
+        "name": "alert_bwquota_enabled",
+        "type": "bool",
+        "hint": "Enable the bw quote email alert"
+      },
+      "ALERT_BWQUOTA_THRESHOLD": {
+        "name": "alert_bwquota_threshold",
+        "type": "number",
+        "hint": "Percentage of monthly bw quota"
+      },
+      "ALERT_CPU_ENABLED": {
+        "name": "alert_cpu_enabled",
+        "type": "bool",
+        "hint": "Enable the cpu usage email alert"
+      },
+      "ALERT_CPU_THRESHOLD": {
+        "name": "alert_cpu_threshold",
+        "type": "number",
+        "hint": "CPU Alert threshold, percentage 0-800"
+      },
+      "ALERT_DISKIO_ENABLED": {
+        "name": "alert_diskio_enabled",
+        "type": "bool",
+        "hint": "Enable the disk IO email alert"
+      },
+      "ALERT_DISKIO_THRESHOLD": {
+        "name": "alert_diskio_threshold",
+        "type": "number",
+        "hint": "IO ops/sec"
+      },
+      "BACKUPSENABLED": {
+        "name": "backups_enabled",
+        "type": "bool",
+        "hint": ""
+      },
+      "BACKUPWEEKLYDAY": {
+        "name": "backup_weekly_day",
+        "type": "number",
+        "hint": ""
+      },
+      "BACKUPWINDOW": {
+        "name": "backup_window",
+        "type": "number",
+        "hint": ""
+      },
+      "CREATE_DT": {
+        "name": "create_dt",
+        "type": "string",
+        "hint": ""
+      },
+      "DATACENTERID": {
+        "name": "datacenter_id",
+        "type": "number",
+        "hint": ""
+      },
+      "DISTRIBUTIONVENDOR": {
+        "name": "distribution_vendor",
+        "type": "string",
+        "hint": ""
+      },
+      "ISKVM": {
+        "name": "is_kvm",
+        "type": "bool",
+        "hint": ""
+      },
+      "ISXEN": {
+        "name": "is_xen",
+        "type": "bool",
+        "hint": ""
+      },
+      "LABEL": {
+        "name": "label",
+        "type": "string",
+        "hint": "This Linode's label"
+      },
+      "LINODEID": {
+        "name": "linode_id",
+        "type": "number",
+        "hint": ""
+      },
+      "LPM_DISPLAYGROUP": {
+        "name": "lpm_display_group",
+        "type": "string",
+        "hint": "Display group in the Linode list inside the Linode Manager"
+      },
+      "PLANID": {
+        "name": "plan_id",
+        "type": "number",
+        "hint": ""
+      },
+      "STATUS": {
+        "name": "status",
+        "type": "number",
+        "hint": ""
+      },
+      "TOTALHD": {
+        "name": "total_hd",
+        "type": "number",
+        "hint": ""
+      },
+      "TOTALRAM": {
+        "name": "total_ram",
+        "type": "number",
+        "hint": ""
+      },
+      "TOTALXFER": {
+        "name": "total_xfer",
+        "type": "number",
+        "hint": ""
+      },
+      "WATCHDOG": {
+        "name": "watchdog",
+        "type": "bool",
+        "hint": "Enable the Lassie shutdown watchdog"
+      }
+    },
+    "config": {
+      "Comments": {
+        "name": "comments",
+        "type": "string",
+        "hint": "Comments you wish to save along with this profile",
+        "editable": true
+      },
+      "ConfigID": {
+        "name": "config_id",
+        "type": "number",
+        "hint": ""
+      },
+      "DiskList": {
+        "name": "disk_list",
+        "type": "string",
+        "hint": "A comma delimited list of DiskIDs; position reflects device node.  The 9th element for specifying the initrd.",
+        "editable": true
+      },
+      "KernelID": {
+        "name": "kernel_id",
+        "type": "number",
+        "hint": "The KernelID for this profile.  Found in avail.kernels()",
+        "editable": true
+      },
+      "Label": {
+        "name": "label",
+        "type": "string",
+        "hint": "The Label for this profile",
+        "editable": true
+      },
+      "LinodeID": {
+        "name": "linode_id",
+        "type": "number",
+        "hint": ""
+      },
+      "RAMLimit": {
+        "name": "ram_limit",
+        "type": "number",
+        "hint": "RAMLimit in MB. 0 for max.",
+        "editable": true
+      },
+      "RootDeviceCustom": {
+        "name": "root_device_custom",
+        "type": "string",
+        "hint": "A custom root device setting.",
+        "editable": true
+      },
+      "RootDeviceNum": {
+        "name": "root_device_num",
+        "type": "number",
+        "hint": "Which device number (1-8) that contains the root partition.  0 to utilize RootDeviceCustom.",
+        "editable": true
+      },
+      "RootDeviceRO": {
+        "name": "root_device_ro",
+        "type": "bool",
+        "hint": "Enables the 'ro' kernel flag.  Modern distros want this. ",
+        "editable": true
+      },
+      "RunLevel": {
+        "name": "run_level",
+        "type": "string",
+        "hint": "One of 'default', 'single', 'binbash' ",
+        "editable": true
+      },
+      "__validationErrorArray": {
+        "name": "__validation_error_array",
+        "type": "string",
+        "hint": ""
+      },
+      "apiColumnFilterStruct": {
+        "name": "api_column_filter_struct",
+        "type": "string",
+        "hint": ""
+      },
+      "devtmpfs_automount": {
+        "name": "devtmpfs_automount",
+        "type": "bool",
+        "hint": "Controls if pv_ops kernels should automount devtmpfs at boot. ",
+        "editable": true
+      },
+      "helper_depmod": {
+        "name": "helper_depmod",
+        "type": "bool",
+        "hint": "Creates an empty modprobe file for the kernel you're booting. ",
+        "editable": true
+      },
+      "helper_disableUpdateDB": {
+        "name": "helper_disable_update_db",
+        "type": "bool",
+        "hint": "Enable the disableUpdateDB filesystem helper",
+        "editable": true
+      },
+      "helper_distro": {
+        "name": "helper_distro",
+        "type": "bool",
+        "hint": "Enable the Distro filesystem helper.  Corrects fstab and inittab/upstart entries depending on the kernel you're booting.  You want this.",
+        "editable": true
+      },
+      "helper_libtls": {
+        "name": "helper_libtls",
+        "type": "bool",
+        "hint": ""
+      },
+      "helper_network": {
+        "name": "helper_network",
+        "type": "bool",
+        "hint": "Automatically creates network configuration files for your distro and places them into your filesystem.",
+        "editable": true
+      },
+      "helper_xen": {
+        "name": "helper_xen",
+        "type": "bool",
+        "hint": "Deprecated - use helper_distro.",
+        "editable": true
+      },
+      "isRescue": {
+        "name": "is_rescue",
+        "type": "bool",
+        "hint": ""
+      },
+      "virt_mode": {
+        "name": "virt_mode",
+        "type": "string",
+        "hint": "Controls the virtualization mode. One of 'paravirt', 'fullvirt' ",
+        "editable": true
+      }
+    },
+    "disk": {
+      "CREATE_DT": {
+        "name": "create_dt",
+        "type": "string",
+        "hint": ""
+      },
+      "DISKID": {
+        "name": "disk_id",
+        "type": "number",
+        "hint": ""
+      },
+      "ISREADONLY": {
+        "name": "is_read_only",
+        "type": "bool",
+        "hint": "Enable forced read-only for this Disk"
+      },
+      "LABEL": {
+        "name": "label",
+        "type": "string",
+        "hint": "The display label for this Disk"
+      },
+      "LINODEID": {
+        "name": "linode_id",
+        "type": "number",
+        "hint": ""
+      },
+      "SIZE": {
+        "name": "size",
+        "type": "number",
+        "hint": ""
+      },
+      "STATUS": {
+        "name": "status",
+        "type": "number",
+        "hint": ""
+      },
+      "TYPE": {
+        "name": "type",
+        "type": "string",
+        "hint": ""
+      },
+      "UPDATE_DT": {
+        "name": "update_dt",
+        "type": "string",
+        "hint": ""
+      }
+    },
+    "ip": {
+      "IPADDRESS": {
+        "name": "ip_address",
+        "type": "string",
+        "hint": ""
+      },
+      "IPADDRESSID": {
+        "name": "ip_address_id",
+        "type": "number",
+        "hint": ""
+      },
+      "ISPUBLIC": {
+        "name": "is_public",
+        "type": "bool",
+        "hint": ""
+      },
+      "LINODEID": {
+        "name": "linode_id",
+        "type": "number",
+        "hint": ""
+      },
+      "RDNS_NAME": {
+        "name": "rdns_name",
+        "type": "string",
+        "hint": ""
+      }
+    },
+    "job": {
+      "ACTION": {
+        "name": "action",
+        "type": "string",
+        "hint": ""
+      },
+      "DURATION": {
+        "name": "duration",
+        "type": "number",
+        "hint": ""
+      },
+      "ENTERED_DT": {
+        "name": "entered_dt",
+        "type": "string",
+        "hint": ""
+      },
+      "HOST_FINISH_DT": {
+        "name": "host_finish_dt",
+        "type": "string",
+        "hint": ""
+      },
+      "HOST_MESSAGE": {
+        "name": "host_message",
+        "type": "string",
+        "hint": ""
+      },
+      "HOST_START_DT": {
+        "name": "host_start_dt",
+        "type": "string",
+        "hint": ""
+      },
+      "HOST_SUCCESS": {
+        "name": "host_success",
+        "type": "bool",
+        "hint": ""
+      },
+      "JOBID": {
+        "name": "job_id",
+        "type": "number",
+        "hint": ""
+      },
+      "LABEL": {
+        "name": "label",
+        "type": "string",
+        "hint": ""
+      },
+      "LINODEID": {
+        "name": "linode_id",
+        "type": "number",
+        "hint": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "moment": "*"
+  },
+  "machinepack": {
+    "machines": ["filter-expired-auth-sessions", "new-sid", "return-user", "return-session", "date-string"],
+    "machineVersions": {
+      "filter-expired-auth-sessions": "2.6.1",
+      "new-sid": "1.7.1",
+      "return-user": "1.7.1",
+      "return-session": "1.7.1",
+      "date-string": "1.7.1"
+    }
+  }
+}

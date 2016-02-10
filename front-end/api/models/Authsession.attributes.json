@@ -1,0 +1,1 @@
+{"attributes":{"userid":{"type":"integer","unique":false,"required":true},"sid":{"type":"string","unique":false,"required":true},"expires":{"type":"integer","defaultsTo":"0","unique":false,"required":false}},"globalId":"Authsession","identity":"authsession"}

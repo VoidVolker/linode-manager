@@ -1,0 +1,18 @@
+{
+    "sources": [
+        {
+            "path": "./",
+            "src": "srv-src",
+            "lib": "srv-build"
+        },{
+            "path": "./",
+            "src": "srv-src/app",
+            "lib": "srv-build/app"
+        }
+    ],
+    "restart": {
+            "path": "srv-build/",
+            "app": "node",
+            "args": ["linode-manager-wss.js"]
+        }
+}

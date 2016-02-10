@@ -1,0 +1,18 @@
+{
+    "uid": "linode-manager",
+    "append": true,
+    "watch": false,
+    "script": "app.js",
+    "args": ["--prod"],
+    "sourceDir": "/home/me/apps/linode-manager/front-end",
+    "logFile": "/home/me/apps/linode-manager/logs/forever.log",
+    "outFile": "/home/me/apps/linode-manager/logs/out.log",
+    "errFile": "/home/me/apps/linode-manager/logs/err.log",
+    "minUptime": 1000,
+    "spinSleepTime": 1000
+}
+
+// 'pidFile', 'logFile', 'errFile', 'watch', 'minUptime', 'append',
+// 'silent', 'outFile', 'max', 'command', 'path', 'spinSleepTime',
+// 'sourceDir', 'workingDir', 'uid', 'watchDirectory', 'watchIgnore',
+// 'killTree', 'killSignal', 'id'

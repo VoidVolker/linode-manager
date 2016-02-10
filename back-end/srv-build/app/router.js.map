@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "router.js",
+  "sourceRoot": "../..",
+  "sources": [
+    "srv-src/app/router.coffee"
+  ],
+  "names": [],
+  "mappings": ""
+}

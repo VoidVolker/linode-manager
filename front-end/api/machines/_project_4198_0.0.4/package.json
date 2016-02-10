@@ -1,0 +1,23 @@
+{
+  "dependencies": {},
+  "machinepack": {
+    "machines": ["create_session", "create_group", "create_user", "destroy_session", "destroy_group", "destroy_user", "findOne_session", "findOne_group", "findOne_user", "find_session", "find_group", "find_user", "update_session", "update_group", "update_user"],
+    "machineVersions": {
+      "create_session": "0.0.7",
+      "create_group": "0.0.4",
+      "create_user": "0.0.9",
+      "destroy_session": "0.0.7",
+      "destroy_group": "0.0.4",
+      "destroy_user": "0.0.9",
+      "findOne_session": "0.0.7",
+      "findOne_group": "0.0.4",
+      "findOne_user": "0.0.9",
+      "find_session": "0.0.7",
+      "find_group": "0.0.4",
+      "find_user": "0.0.9",
+      "update_session": "0.0.7",
+      "update_group": "0.0.4",
+      "update_user": "0.0.9"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "moment": "*"
+  },
+  "machinepack": {
+    "machines": ["get-cookie", "set-cookie", "try-get-cookie"],
+    "machineVersions": {
+      "get-cookie": "1.5.0",
+      "set-cookie": "1.5.0",
+      "try-get-cookie": "1.5.0"
+    }
+  }
+}

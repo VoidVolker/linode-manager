@@ -1,0 +1,1 @@
+{"attributes":{"read":{"type":"string","defaultsTo":"[]","unique":false,"required":false},"create":{"type":"string","defaultsTo":"[]","unique":false,"required":false},"update":{"type":"string","defaultsTo":"[]","unique":false,"required":false},"delete":{"type":"string","defaultsTo":"[]","unique":false,"required":false}},"globalId":"Group","identity":"group"}
