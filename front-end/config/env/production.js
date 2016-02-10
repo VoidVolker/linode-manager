@@ -35,13 +35,15 @@ module.exports = {
    * Set the log level in production environment to "silent"                 *
    ***************************************************************************/
 
-  // log: {
-  //   level: "silent"
-  // }
+  , log: {
+    level: 'warn'
+  }
   , policies: {
     'authsession': false
     , 'group' : false
     , 'user': false
   }
+
+  , hookTimeout: 500000
 
 };

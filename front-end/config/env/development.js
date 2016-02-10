@@ -30,5 +30,7 @@ module.exports = {
   //   , 'authsession': false
   //   , 'group': false
   // }
-
+  , log: {
+    level: 'silly'
+  }
 };
