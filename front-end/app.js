@@ -55,7 +55,5 @@ process.chdir(__dirname);
 
 
   // Start server
-  var r = rc('linode-manager');
-  console.log('==< conf:', r);
-  sails.lift( r );
+  sails.lift( rc('linode-manager') );
 })();
