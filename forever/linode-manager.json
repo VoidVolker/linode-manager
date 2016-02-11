@@ -16,7 +16,7 @@
     "watch": false,
     "script": "linode-manager-wss.js",
     "args": [""],
-    "sourceDir": "/home/node/apps/linode-manager/back-end/srv-build",
+    "sourceDir": "/home/node/linode-manager/back-end/srv-build",
     "logFile": "/home/node/log/linode-manager/wss-forever.log",
     "outFile": "/home/node/log/linode-manager/wss-out.log",
     "errFile": "/home/node/log/linode-manager/wss-err.log",
