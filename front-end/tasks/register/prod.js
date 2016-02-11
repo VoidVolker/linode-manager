@@ -4,11 +4,11 @@ module.exports = function (grunt) {
 		'concat',
 		'uglify',
 		'cssmin',
-		'sails-linker:prodJsRelative',
-		'sails-linker:prodStylesRelative',
+		'sails-linker:prodJs',
+		'sails-linker:prodStyles',
 		'sails-linker:devTpl',
-		'sails-linker:prodJsRelativeJade',
-		'sails-linker:prodStylesRelativeJade',
+		'sails-linker:prodJsJade',
+		'sails-linker:prodStylesJade',
 		'sails-linker:devTplJade'
 	]);
 };
