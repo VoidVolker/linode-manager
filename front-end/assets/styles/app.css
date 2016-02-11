@@ -26,6 +26,10 @@ BODY {
     align-content: flex-start;
 }
 
+#linodesTree {
+    -webkit-flex:1 0 auto; /* Safari overlap fix */
+}
+
 #linodes .block {
     margin: 5px;
 }
