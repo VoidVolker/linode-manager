@@ -36,7 +36,7 @@ module.exports = {
    ***************************************************************************/
 
   , log: {
-    level: 'warn'
+    level: 'info'
   }
   , policies: {
     'authsession': false
