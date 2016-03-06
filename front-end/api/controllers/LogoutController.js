@@ -22,7 +22,7 @@ module.exports = {
                     },
                     "success": function(getCookie) {
                         // Destroy
-                        sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.12.0'].destroy({
+                        sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.13.0'].destroy({
                             "model": "authsession",
                             "criteria": {
                                 sid: getCookie

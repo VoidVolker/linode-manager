@@ -6,7 +6,7 @@ http = require 'http'
 https = require 'https'
 url = require 'url'
 util = require 'util'
-fs = require 'fs'
+fs = require 'fs-extra'
 needle = require 'needle'
 rufus = require 'rufus'
 rc = require 'rc'
@@ -72,6 +72,7 @@ try
 
     Server = tools.require './app/server'
     requestHandlers = tools.require './app/requestHandlers'
+    requestHandlers.config = config
     # API key and url
     requestHandlers.key config.linode.key
     requestHandlers.url config.linode.url

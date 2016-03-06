@@ -20,7 +20,7 @@ module.exports = {
             },
             fn: function(inputs, exits) {
                 // Find One User
-                sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.12.0'].findOne({
+                sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.13.0'].findOne({
                     "model": "user",
                     "criteria": {
                         login: inputs.login
@@ -100,7 +100,7 @@ module.exports = {
                                             },
                                             "success": function(getCookie) {
                                                 // Destroy
-                                                sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.12.0'].destroy({
+                                                sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.13.0'].destroy({
                                                     "model": "authsession",
                                                     "criteria": {
                                                         userid: (returnUser && returnUser.id),
@@ -141,7 +141,7 @@ module.exports = {
                                                                     },
                                                                     "success": function(unixTimeOffset) {
                                                                         // Create session
-                                                                        sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.12.0'].create({
+                                                                        sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.13.0'].create({
                                                                             "model": "authsession",
                                                                             "fields": {
                                                                                 sid: newSid,
@@ -199,7 +199,7 @@ module.exports = {
                                                                                                     },
                                                                                                     "success": function(noop) {
                                                                                                         // Return String
-                                                                                                        sails.machines['2e6c2f60-6d69-4c41-851f-5c586760aee8_1.1.1'].returnString({
+                                                                                                        sails.machines['2e6c2f60-6d69-4c41-851f-5c586760aee8_1.4.1'].returnString({
                                                                                                             "string": inputs.redirect
                                                                                                         }).exec({
                                                                                                             "error": function(returnString) {

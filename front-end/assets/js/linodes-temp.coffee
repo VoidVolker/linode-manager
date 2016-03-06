@@ -189,8 +189,9 @@ class LinodeTemp
     #     #         console.log('Run')
     #     return block
 
-    scriptTemp = (linode, name) ->
-        script = $ '<li>
+    scriptTemp = (linode, name, data) ->
+
+        result = $ '<li>
             <form class="uk-form">
                 <fieldset data-uk-margin>
                     <div class="uk-form-row">
@@ -203,17 +204,17 @@ class LinodeTemp
                         <input value="' + name + '" type="text" placeholder="" class="name uk-form-width-medium">
                     </div>
                     <div class="uk-form-row">
-                        <textarea class="code" cols="" rows="15" placeholder="Script code"></textarea>
+                        <textarea class="code" cols="" rows="15" placeholder="Script code">' + data + '</textarea>
                     </div>
                 </fieldset>
             </form>
             <div class="resultTitle">Result:</div>
             <div class="result"></div>
         </li>'
-        save = $ '.save', script
-        cancel = $ '.cancel', script
-        name = $ '.name', script
-        code = $ '.code', script
+        save = $ '.save', result
+        cancel = $ '.cancel', result
+        name = $ '.name', result
+        code = $ '.code', result
 
         code.on 'change', (e) ->
             console.log 'change', this
@@ -221,11 +222,12 @@ class LinodeTemp
         code.on 'keydown', (e) ->
             console.log 'keydown', this
 
-        return script
+        return result
 
     scripts: (linode) ->
         scripts = linode.scripts
         result = []
+        # console.log 'linode.scripts', linode.scripts
         for script, i in scripts
             block = $ tmpBlock
                 obj: script
@@ -234,9 +236,9 @@ class LinodeTemp
                 title: linode.state.label.value + ' / scripts / '
                 label: 'label'
                 type: 'script'
-                # filter: ['linode_id']
+                filter: ['data']
                 linodeID: linode.id
-            $( '.uk-list', block ).append scriptTemp linode, script.label.value
+            $( '.uk-list', block ).append scriptTemp linode, script.label.value, script.data
 
             addActions block, linode,
                 'Run': (b) ->

@@ -1,0 +1,15 @@
+{
+  "dependencies": {},
+  "machinepack": {
+    "machines": ["create", "destroy", "destroy-arr", "find-one", "list", "list-models", "update"],
+    "machineVersions": {
+      "create": "1.15.0",
+      "destroy": "1.15.0",
+      "destroy-arr": "1.8.0",
+      "find-one": "2.14.0",
+      "list": "1.15.0",
+      "list-models": "1.0.0",
+      "update": "1.15.0"
+    }
+  }
+}

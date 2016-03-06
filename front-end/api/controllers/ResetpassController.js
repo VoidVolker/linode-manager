@@ -34,7 +34,7 @@ module.exports = {
                     },
                     "success": function(tryGetCookie) {
                         // Find One Session by SID
-                        sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.12.0'].findOne({
+                        sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.13.0'].findOne({
                             "model": "authsession",
                             "criteria": {
                                 sid: tryGetCookie
@@ -63,7 +63,7 @@ module.exports = {
                                     },
                                     "success": function(returnBoolean) {
                                         // Find One
-                                        sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.12.0'].findOne({
+                                        sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.13.0'].findOne({
                                             "model": "user",
                                             "criteria": {
                                                 id: inputs.id
@@ -104,7 +104,7 @@ module.exports = {
                                                             },
                                                             "success": function(encryptPassword) {
                                                                 // Update
-                                                                sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.12.0'].update({
+                                                                sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.13.0'].update({
                                                                     "model": "user",
                                                                     "criteria": {
                                                                         id: (returnUser && returnUser.id)
@@ -124,7 +124,7 @@ module.exports = {
                                                                     },
                                                                     "success": function(update) {
                                                                         // Get redirect
-                                                                        sails.machines['2e6c2f60-6d69-4c41-851f-5c586760aee8_1.1.1'].returnString({
+                                                                        sails.machines['2e6c2f60-6d69-4c41-851f-5c586760aee8_1.4.1'].returnString({
                                                                             "string": inputs.redirect
                                                                         }).exec({
                                                                             "error": function(getRedirect) {

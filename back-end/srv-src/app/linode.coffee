@@ -1,5 +1,6 @@
 tools = require '../tools'
 needle = require 'needle'
+scripts = require('./scripts').init()
 
 needleOptions =
     open_timeout: 5000 # if we don't get our response headers in 5 seconds, boom.
@@ -8,6 +9,7 @@ needleOptions =
 
 Converter = require './converter'
 ConvertLinode = Converter.convert.linode
+
 
 errors =
     0: "ok"
@@ -148,10 +150,11 @@ exports.linodeListAll = (data, cb) ->
                                 'disk': _disk
                                 'ip': _ip
                                 'job': _job
-                                'scripts': [
-                                    { label: {value: 'script 1'} },
-                                    { label: {value: 'script 2'} }
-                                ]
+                                'scripts': scripts.all _id
+                                # [
+                                #     { label: {value: 'script 1'} },
+                                #     { label: {value: 'script 2'} }
+                                # ]
                             )
                         cb err, result
                 )

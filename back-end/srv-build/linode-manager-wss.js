@@ -13,7 +13,7 @@ url = require('url');
 
 util = require('util');
 
-fs = require('fs');
+fs = require('fs-extra');
 
 needle = require('needle');
 
@@ -83,6 +83,7 @@ try {
   });
   Server = tools.require('./app/server');
   requestHandlers = tools.require('./app/requestHandlers');
+  requestHandlers.config = config;
   requestHandlers.key(config.linode.key);
   requestHandlers.url(config.linode.url);
   Handlers = requestHandlers.handle;

@@ -31,7 +31,7 @@ module.exports = {
                     },
                     "success": function(tryGetCookie) {
                         // Find One Session by SID
-                        sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.12.0'].findOne({
+                        sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.13.0'].findOne({
                             "model": "authsession",
                             "criteria": {
                                 sid: tryGetCookie
@@ -60,7 +60,7 @@ module.exports = {
                                     },
                                     "success": function(returnBoolean) {
                                         // Find One User
-                                        sails.machines['_project_4198_0.0.4'].findOne_user({
+                                        sails.machines['_project_4198_0.0.6'].findOne_user({
                                             "criteria": {
                                                 login: inputs.login
                                             }
@@ -81,7 +81,7 @@ module.exports = {
                                                     },
                                                     "success": function(encryptPassword) {
                                                         // Create
-                                                        sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.12.0'].create({
+                                                        sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.13.0'].create({
                                                             "model": "user",
                                                             "fields": {
                                                                 login: inputs.login,
@@ -120,7 +120,7 @@ module.exports = {
                                             },
                                             "notFound": function(findOneUser) {
                                                 // Return Error
-                                                sails.machines['2e6c2f60-6d69-4c41-851f-5c586760aee8_1.1.1'].returnError({
+                                                sails.machines['2e6c2f60-6d69-4c41-851f-5c586760aee8_1.4.1'].returnError({
                                                     "msg": "Username unavailable"
                                                 }).exec({
                                                     "error": function(returnError) {

@@ -8,7 +8,7 @@ module.exports = {
             },
             fn: function(inputs, exits) {
                 // Find One User
-                sails.machines['_project_4198_0.0.4'].findOne_user({
+                sails.machines['_project_4198_0.0.6'].findOne_user({
                     "criteria": {
                         id: 1
                     }
@@ -31,7 +31,7 @@ module.exports = {
                             },
                             "success": function(tryGetCookie) {
                                 // Find One Session by SID
-                                sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.12.0'].findOne({
+                                sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.13.0'].findOne({
                                     "model": "authsession",
                                     "criteria": {
                                         sid: tryGetCookie
@@ -143,7 +143,7 @@ module.exports = {
                             },
                             "success": function(encryptPassword) {
                                 // Create
-                                sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.12.0'].create({
+                                sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.13.0'].create({
                                     "model": "user",
                                     "fields": {
                                         login: "admin",

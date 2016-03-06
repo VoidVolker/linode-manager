@@ -1,0 +1,16 @@
+{
+  "dependencies": {},
+  "machinepack": {
+    "machines": ["noop", "json", "return-array", "return-boolean", "return-error", "return-number", "return-object", "return-string"],
+    "machineVersions": {
+      "noop": "1.4.1",
+      "json": "1.0.3",
+      "return-array": "1.6.1",
+      "return-boolean": "1.6.1",
+      "return-error": "1.6.1",
+      "return-number": "1.6.1",
+      "return-object": "1.6.1",
+      "return-string": "1.6.1"
+    }
+  }
+}

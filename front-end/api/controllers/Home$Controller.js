@@ -22,7 +22,7 @@ module.exports = {
                     },
                     "success": function(tryGetCookie) {
                         // Find One Session by SID
-                        sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.12.0'].findOne({
+                        sails.machines['eda2a2c7-cd02-479f-a073-4baaae9acd13_1.13.0'].findOne({
                             "model": "authsession",
                             "criteria": {
                                 sid: tryGetCookie
