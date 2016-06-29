@@ -2,6 +2,8 @@
 
 # linode-manager 
 
+Alternate manager for linode servers
+
 _sponsored by Mighty JS_
 
 Linode manager
